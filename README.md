@@ -18,10 +18,15 @@ This project demonstrates a secure communication between a client and server usi
 
 ## How to Run the Project
 
-### Step 1: Clone the Repository
+### Steps: Clone the Repository
 
 Clone this repository to your local machine:
 
-```bash
+
 git clone https://github.com/your-username/your-repository-name.git
 cd your-repository-name
+
+Use Docker Compose to build and run the containers:
+
+docker-compose up --build
+This command will:
