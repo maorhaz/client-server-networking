@@ -1,5 +1,5 @@
 # client-server-networking
-# RSA, Diffie-Hellman, and AES Encryption Example
+# RSA, Diffie-Hellman, and AES Encryption 
 
 This project demonstrates a secure communication between a client and server using RSA, Diffie-Hellman key exchange, and AES encryption. The client encrypts a file using AES and sends it to the server, which then decrypts it.
 
