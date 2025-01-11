@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  server:
+    build:
+      context: ./server
+    command: python3 server.py
+    ports:
+      - "1234:1234"
+    volumes:
+      - ./server:/app
+    networks:
+      - network1
+
+  client:
+    build:
+      context: ./client
+    command: python3 client.py
+    volumes:
+      - ./client:/app
+    depends_on:
+      - server
+    networks:
+      - network1
+
+networks:
+  network1:
+    driver: bridge
